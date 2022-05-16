@@ -129,8 +129,6 @@ main {
 .selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado:hover {
     animation: c-glowing-red .3s ease-in-out infinite;
     animation-direction: alternate;
-    transform: scale(1.07);
-    z-index: 2;
 }
 
 .selecao-de-personagens .lista-de-personagens .personagem .tag {
@@ -140,18 +138,19 @@ main {
     top: 5px;
     left: 5px;
     color: var(--cor-azul-media);
-}
-
-.selecao-de-personagens .lista-de-personagens .personagem.selecionado .tag {
-    display: block;
     transition: opacity .3s ease-in-out;
     animation: text-glowing-blue .3s ease-in-out infinite;
     animation-direction: alternate;
 }
 
-.selecao-de-personagens .lista-de-personagens .personagem.personagem.jogador-2-selecionado .tag {
+.selecao-de-personagens .lista-de-personagens .personagem.selecionado .tag {
     display: block;
-    transition: opacity .3s ease-in-out;
+    animation: text-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+.selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado .tag {
+    display: block;
     animation: text-glowing-red .3s ease-in-out infinite;
     animation-direction: alternate;
 }
